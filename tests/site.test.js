@@ -89,6 +89,12 @@ describe('preços', () => {
     }
   });
 
+  it('a importação se chama "Documento da matéria" (não só plano de ensino)', () => {
+    expect(html).toContain('documento da matéria');
+    expect(html).toContain('Importar matrícula, documentos das matérias e histórico com IA');
+    expect(html).not.toContain('Importar matrícula, plano de ensino e histórico com IA');
+  });
+
   it('há só dois cartões de plano: Grátis e Premium', () => {
     expect([...html.matchAll(/data-plan-card="(\w+)"/g)].map((m) => m[1])).toEqual(['gratis', 'premium']);
   });
