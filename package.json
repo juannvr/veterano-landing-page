@@ -1,0 +1,17 @@
+{
+  "name": "veterano-landing-page",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "license": "UNLICENSED",
+  "description": "Landing page de pré-venda do Veterano (HTML, CSS e um pouco de JS; sem build).",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "vitest run",
+    "assets": "node scripts/make-assets.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.0",
+    "vitest": "^5.0.3"
+  }
+}

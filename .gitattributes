@@ -1,0 +1,11 @@
+# Fim de linha consistente entre Windows, macOS e Linux (CI).
+* text=auto eol=lf
+
+# Binários
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.ttf binary
+*.otf binary
+*.pdf binary

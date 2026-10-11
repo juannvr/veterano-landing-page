@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Veterano · seu veterano no bolso</title>
+    <meta
+      name="description"
+      content="App para universitários: sala, horário, provas, notas e quantas faltas ainda dá. Funciona sem internet."
+    />
+    <meta name="theme-color" content="#2E63F0" />
+    <link rel="canonical" href="https://juannvr.github.io/veterano-landing-page/" />
+
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="preload" href="fonts/geist-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/geist-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Veterano" />
+    <meta property="og:title" content="Veterano · seu veterano no bolso" />
+    <meta
+      property="og:description"
+      content="App para universitários: sala, horário, provas, notas e quantas faltas ainda dá. Funciona sem internet."
+    />
+    <meta property="og:url" content="https://juannvr.github.io/veterano-landing-page/" />
+    <meta property="og:image" content="https://juannvr.github.io/veterano-landing-page/img/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Veterano",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "iOS, Android",
+        "description": "App para universitários: sala, horário, provas, notas e quantas faltas ainda dá. Funciona sem internet.",
+        "inLanguage": "pt-BR",
+        "offers": [
+          { "@type": "Offer", "name": "Grátis", "price": "0", "priceCurrency": "BRL" },
+          { "@type": "Offer", "name": "Premium (mensal)", "price": "9.90", "priceCurrency": "BRL" }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Ícones reutilizados -->
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true" focusable="false">
+      <symbol id="check" viewBox="0 0 24 24">
+        <path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+      </symbol>
+      <symbol id="logo" viewBox="0 0 100 100">
+        <path d="M24 36 50 78 76 36" fill="none" stroke="currentColor" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" />
+        <circle cx="50" cy="24" r="8.5" fill="currentColor" />
+      </symbol>
+      <symbol id="plus" viewBox="0 0 24 24">
+        <path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </symbol>
+    </svg>
+
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+    <header class="header">
+      <div class="container header__inner">
+        <a class="brand" href="#topo" aria-label="Veterano, início">
+          <span class="brand__mark" style="color: #fff"><svg width="22" height="22"><use href="#logo" /></svg></span>
+          <span class="brand__name">veterano</span>
+        </a>
+        <nav class="nav" aria-label="Principal">
+          <div class="nav__links">
+            <a href="#como">Como funciona</a>
+            <a href="#calculadora">Calculadora</a>
+            <a href="#planos">Planos</a>
+            <a href="#perguntas">Perguntas</a>
+          </div>
+          <a class="nav__cta" href="#lista">Quero usar</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <!-- 1. Hero -->
+      <section id="topo" class="hero">
+        <div class="container hero__grid">
+          <div id="lista" class="hero__copy">
+            <span class="pill pill--accent pill--soon">Em breve na App Store e no Google Play</span>
+            <h1 class="h1">Seu veterano no bolso.</h1>
+            <p class="lead">
+              Sala, horário, provas, notas e quantas faltas ainda dá. Tudo num app calmo, que responde o
+              que importa e funciona sem internet.
+            </p>
+
+            <div class="waitlist">
+              <form data-waitlist-form novalidate>
+                <div class="waitlist__row">
+                  <label class="waitlist__field">
+                    <span class="sr-only">Seu e-mail</span>
+                    <input
+                      class="waitlist__input"
+                      type="email"
+                      name="email"
+                      placeholder="seu@email.com"
+                      autocomplete="email"
+                      inputmode="email"
+                    />
+                  </label>
+                  <button class="btn btn--primary btn--lg" type="submit">Avise-me no lançamento</button>
+                </div>
+                <p class="waitlist__error" data-waitlist-error role="alert" hidden></p>
+              </form>
+              <div class="waitlist__done" data-waitlist-done role="status" hidden>
+                <span class="waitlist__done-icon"><svg width="18" height="18"><use href="#check" /></svg></span>
+                <span>Pronto. Avisamos <strong data-email></strong> quando o app sair. Sem spam.</span>
+              </div>
+              <p class="waitlist__notice" data-waitlist-notice>
+                Prévia: a lista de espera ainda não está conectada, então nenhum e-mail é salvo.
+              </p>
+            </div>
+
+            <ul class="checks">
+              <li><svg class="check-icon" width="16" height="16"><use href="#check" /></svg>Grátis para começar</li>
+              <li><svg class="check-icon" width="16" height="16"><use href="#check" /></svg>7 dias grátis no Premium</li>
+              <li><svg class="check-icon" width="16" height="16"><use href="#check" /></svg>Seus dados ficam no celular</li>
+            </ul>
+          </div>
+
+          <div class="hero__media">
+            <div class="phone phone--cut">
+              <div class="phone__screen">
+                <img
+                  src="img/screens/inicio.webp"
+                  srcset="img/screens/inicio.webp 1x, img/screens/inicio@2x.webp 2x, img/screens/inicio@3x.webp 3x"
+                  alt="Tela Início do Veterano com as aulas do dia e os botões Fui e Faltei"
+                  width="296"
+                  height="611"
+                  fetchpriority="high"
+                  decoding="async"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Faixa de perguntas -->
+      <section class="questions" aria-label="O que cada tela responde">
+        <div class="container questions__grid">
+          <div class="questions__item"><span class="questions__tab">INÍCIO</span><span class="questions__q">O que tenho agora?</span></div>
+          <div class="questions__item"><span class="questions__tab">AGENDA</span><span class="questions__q">O que vem aí?</span></div>
+          <div class="questions__item"><span class="questions__tab">BOLETIM</span><span class="questions__q">Como estou indo?</span></div>
+          <div class="questions__item"><span class="questions__tab">FALTAS</span><span class="questions__q">Quantas ainda dá?</span></div>
+        </div>
+      </section>
+
+      <!-- 3. Como funciona -->
+      <section id="como" class="section">
+        <div class="container how__head">
+          <span class="eyebrow">Como funciona</span>
+          <h2 class="h2">Três minutos no começo do semestre. Depois, um toque por aula.</h2>
+        </div>
+        <div class="container how__cards">
+          <div class="how__card">
+            <span class="how__num">1</span>
+            <h3 class="h3">Cadastre as matérias</h3>
+            <p>Nome, dias e horário em uma tela. No Premium, mande o comprovante de matrícula e pronto.</p>
+          </div>
+          <div class="how__card">
+            <span class="how__num">2</span>
+            <h3 class="h3">Marque presença em um toque</h3>
+            <p>Quando a aula termina, o app pergunta: fui ou faltei? Aula cancelada ou reposição também têm lugar.</p>
+          </div>
+          <div class="how__card">
+            <span class="how__num">3</span>
+            <h3 class="h3">Saiba exatamente onde está</h3>
+            <p>Quantas faltas ainda dá, quanto precisa tirar na próxima prova e o que vence esta semana.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Recursos -->
+      <section class="feature">
+        <div class="container feature__inner">
+          <div class="feature__copy">
+            <span class="pill">FALTAS</span>
+            <h2 class="h2 h2--md">Quantas faltas ainda dá, por matéria.</h2>
+            <p class="body">
+              O limite é calculado pela carga horária e pela sua grade. Nada de fazer conta na mão no fim do
+              semestre.
+            </p>
+            <ul class="feature__points">
+              <li><svg class="check-icon" width="20" height="20"><use href="#check" /></svg>Faltas contadas por dia de aula</li>
+              <li><svg class="check-icon" width="20" height="20"><use href="#check" /></svg>Aula cancelada conta como presença</li>
+              <li><svg class="check-icon" width="20" height="20"><use href="#check" /></svg>Reposição com ou sem data marcada</li>
+            </ul>
+          </div>
+          <div class="feature__media">
+            <div class="phone">
+              <div class="phone__screen">
+                <img
+                  src="img/screens/faltas.webp"
+                  srcset="img/screens/faltas.webp 1x, img/screens/faltas@2x.webp 2x, img/screens/faltas@3x.webp 3x"
+                  alt="Boletim do Veterano mostrando, para cada matéria, quantas faltas já tem e o limite de dias"
+                  width="296"
+                  height="611"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature feature--reverse section--alt">
+        <div class="container feature__inner">
+          <div class="feature__copy">
+            <span class="pill pill--white">AGENDA</span>
+            <h2 class="h2 h2--md">Provas e entregas, sem susto.</h2>
+            <p class="body">
+              Veja a semana ou o mês inteiro, com cada atividade na cor da matéria. Um lembrete na véspera e só.
+            </p>
+            <ul class="feature__points">
+              <li><svg class="check-icon" width="20" height="20"><use href="#check" /></svg>Lista, semana ou mês</li>
+              <li><svg class="check-icon" width="20" height="20"><use href="#check" /></svg>Média simples ou com pesos</li>
+              <li><svg class="check-icon" width="20" height="20"><use href="#check" /></svg>“Quanto preciso tirar” em cada matéria</li>
+            </ul>
+          </div>
+          <div class="feature__media">
+            <div class="phone">
+              <div class="phone__screen">
+                <img
+                  src="img/screens/agenda.webp"
+                  srcset="img/screens/agenda.webp 1x, img/screens/agenda@2x.webp 2x, img/screens/agenda@3x.webp 3x"
+                  alt="Agenda do Veterano no modo mês, com provas e entregas marcadas por cor de matéria"
+                  width="296"
+                  height="611"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature">
+        <div class="container feature__inner">
+          <div class="feature__copy">
+            <span class="pill pill--accent">PREMIUM</span>
+            <h2 class="h2 h2--md">Mande o documento. A IA preenche.</h2>
+            <p class="body">
+              Comprovante de matrícula, plano de ensino ou histórico escolar. Você confere tudo antes de
+              salvar, e o arquivo não fica guardado.
+            </p>
+            <ul class="feature__points">
+              <li><svg class="check-icon" width="20" height="20"><use href="#check" /></svg>Matérias, horários e salas do semestre</li>
+              <li><svg class="check-icon" width="20" height="20"><use href="#check" /></svg>Provas, datas e pesos da disciplina</li>
+              <li><svg class="check-icon" width="20" height="20"><use href="#check" /></svg>Histórico com notas e coeficiente</li>
+            </ul>
+          </div>
+          <div class="feature__media">
+            <div class="phone">
+              <div class="phone__screen">
+                <img
+                  src="img/screens/importar.webp"
+                  srcset="img/screens/importar.webp 1x, img/screens/importar@2x.webp 2x, img/screens/importar@3x.webp 3x"
+                  alt="Tela de importação do Veterano: comprovante de matrícula, plano de ensino ou histórico escolar"
+                  width="296"
+                  height="611"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Calculadora grátis -->
+      <section id="calculadora" class="section section--alt" data-calculator>
+        <div class="container calc__grid">
+          <div class="calc__copy">
+            <span class="pill pill--white">CALCULADORA GRÁTIS</span>
+            <h2 class="h2">Quantas faltas eu posso ter?</h2>
+            <p class="body">
+              Coloque a carga horária e como são as suas aulas. A conta é a mesma que o Veterano faz para
+              cada matéria, todo dia, sozinho.
+            </p>
+          </div>
+          <div class="calc__card">
+            <fieldset class="calc__group" data-key="workloadHours">
+              <legend class="calc__legend">Carga horária da matéria</legend>
+              <div class="calc__options">
+                <button type="button" class="calc__option" data-value="30" aria-pressed="false">30 h</button>
+                <button type="button" class="calc__option" data-value="45" aria-pressed="false">45 h</button>
+                <button type="button" class="calc__option" data-value="60" aria-pressed="true">60 h</button>
+                <button type="button" class="calc__option" data-value="75" aria-pressed="false">75 h</button>
+                <button type="button" class="calc__option" data-value="90" aria-pressed="false">90 h</button>
+              </div>
+            </fieldset>
+            <fieldset class="calc__group" data-key="classesPerDay">
+              <legend class="calc__legend">Aulas seguidas por dia</legend>
+              <div class="calc__options">
+                <button type="button" class="calc__option" data-value="1" aria-pressed="false">1</button>
+                <button type="button" class="calc__option" data-value="2" aria-pressed="true">2</button>
+                <button type="button" class="calc__option" data-value="3" aria-pressed="false">3</button>
+                <button type="button" class="calc__option" data-value="4" aria-pressed="false">4</button>
+              </div>
+            </fieldset>
+            <fieldset class="calc__group" data-key="classMinutes">
+              <legend class="calc__legend">Duração de cada aula</legend>
+              <div class="calc__options">
+                <button type="button" class="calc__option" data-value="45" aria-pressed="false">45 min</button>
+                <button type="button" class="calc__option" data-value="50" aria-pressed="false">50 min</button>
+                <button type="button" class="calc__option" data-value="55" aria-pressed="true">55 min</button>
+                <button type="button" class="calc__option" data-value="60" aria-pressed="false">60 min</button>
+              </div>
+            </fieldset>
+            <fieldset class="calc__group" data-key="minAttendance">
+              <legend class="calc__legend">Presença mínima</legend>
+              <div class="calc__options">
+                <button type="button" class="calc__option" data-value="70" aria-pressed="false">70%</button>
+                <button type="button" class="calc__option" data-value="75" aria-pressed="true">75%</button>
+                <button type="button" class="calc__option" data-value="80" aria-pressed="false">80%</button>
+              </div>
+            </fieldset>
+            <div class="calc__result" aria-live="polite">
+              <div>
+                <span class="calc__label">Você pode faltar</span>
+                <span class="calc__value" data-limit>8</span>
+                <span class="calc__unit" data-unit>dias de aula</span>
+              </div>
+              <span class="calc__how" data-how>60 h ÷ (2 × 55 min) = 33 dias de aula. 25% disso = 8.</span>
+            </div>
+            <a class="btn btn--dark btn--block" href="#lista">Quero o app fazendo isso por mim</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. Feito para acalmar -->
+      <section class="calm">
+        <div class="container calm__inner">
+          <div class="calm__head">
+            <span class="eyebrow">Feito para acalmar</span>
+            <h2 class="h2 h2--sm">Faculdade já cobra demais. O app não precisa cobrar também.</h2>
+          </div>
+          <div class="calm__grid">
+            <div class="calm__item">
+              <strong>Nada de vermelho gritando</strong>
+              <span>Sem badges, sem contadores, sem sequência de dias. Avisos só quando importam.</span>
+            </div>
+            <div class="calm__item">
+              <strong>Uma pergunta por tela</strong>
+              <span>Cada aba responde uma coisa. O que importa aparece primeiro.</span>
+            </div>
+            <div class="calm__item">
+              <strong>Funciona sem internet</strong>
+              <span>Na sala sem sinal, no ônibus, no subsolo do prédio.</span>
+            </div>
+            <div class="calm__item">
+              <strong>Seus dados são seus</strong>
+              <span>Ficam no seu celular. Entrar é por código no e-mail, sem senha para lembrar.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. Planos (recalculados em js/pricing.js) -->
+      <section id="planos" class="section section--alt" data-plans>
+        <div class="container plans__inner">
+          <div class="plans__head">
+            <span class="eyebrow">Planos</span>
+            <h2 class="h2">Comece grátis. Pague só se fizer falta.</h2>
+            <p class="body">
+              O Premium tem 7 dias grátis. Fechando o semestre ou o ano, você paga até 39% menos, e as férias
+              saem quase de graça.
+            </p>
+            <div class="segmented" role="tablist" aria-label="Período de cobrança">
+              <button type="button" role="tab" class="segmented__btn" data-period="mensal" aria-selected="false">
+                <span class="segmented__title">Mensal</span><span class="segmented__sub">flexível</span>
+              </button>
+              <button type="button" role="tab" class="segmented__btn" data-period="semestral" aria-selected="false">
+                <span class="segmented__title">Semestral</span><span class="segmented__sub">30% off</span>
+              </button>
+              <button type="button" role="tab" class="segmented__btn" data-period="anual" aria-selected="true">
+                <span class="segmented__title">Anual</span><span class="segmented__sub">39% off</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="plans__grid">
+            <article class="plan" data-plan-card="gratis">
+              <div class="plan__top">
+                <div class="plan__title"><h3 class="plan__name">Grátis</h3></div>
+                <span class="plan__desc">Para conhecer o app</span>
+              </div>
+              <div class="plan__money">
+                <div class="plan__price-row">
+                  <span class="plan__price" data-price>R$ 0</span>
+                  <span class="plan__per" data-per></span>
+                  <span class="plan__old" data-old hidden></span>
+                </div>
+                <span class="plan__total" data-total>Para sempre</span>
+                <span class="plan__save" data-save hidden></span>
+              </div>
+              <ul class="plan__features">
+                <li><svg class="check-icon" width="20" height="20"><use href="#check" /></svg>Cadastrar matérias</li>
+                <li><svg class="check-icon" width="20" height="20"><use href="#check" /></svg>Horários de aula de cada dia</li>
+                <li><svg class="check-icon" width="20" height="20"><use href="#check" /></svg>Funciona sem internet</li>
+              </ul>
+              <a class="btn btn--soft btn--block" href="#lista">Começar grátis</a>
+            </article>
+
+            <article class="plan plan--highlight" data-plan-card="premium">
+              <div class="plan__top">
+                <div class="plan__title">
+                  <h3 class="plan__name">Premium</h3>
+                  <span class="plan__tag">7 dias grátis</span>
+                </div>
+                <span class="plan__desc">Tudo, e a IA preenche por você</span>
+              </div>
+              <div class="plan__money">
+                <div class="plan__price-row">
+                  <span class="plan__price" data-price>R$ 6,00</span>
+                  <span class="plan__per" data-per>por mês</span>
+                  <span class="plan__old" data-old>R$ 9,90</span>
+                </div>
+                <span class="plan__total" data-total>R$ 72,00 por ano</span>
+                <span class="plan__save" data-save>Economize R$ 46,80 (39%)</span>
+              </div>
+              <ul class="plan__features">
+                <li><svg class="check-icon" width="20" height="20"><use href="#check" /></svg>Presença e faltas por matéria</li>
+                <li><svg class="check-icon" width="20" height="20"><use href="#check" /></svg>Agenda de provas e entregas</li>
+                <li><svg class="check-icon" width="20" height="20"><use href="#check" /></svg>Notas, simulador e boletim</li>
+                <li><svg class="check-icon" width="20" height="20"><use href="#check" /></svg>Histórico e coeficiente</li>
+                <li><svg class="check-icon" width="20" height="20"><use href="#check" /></svg>Importar matrícula, plano de ensino e histórico com IA</li>
+                <li><svg class="check-icon" width="20" height="20"><use href="#check" /></svg>Lembretes e notificações</li>
+              </ul>
+              <a class="btn btn--primary btn--block" href="#lista">Testar 7 dias grátis</a>
+            </article>
+          </div>
+
+          <div class="compare" data-compare>
+            <div class="compare__item">
+              <span class="compare__label">No mensal, 12 meses</span>
+              <span class="compare__value" data-compare-monthly12>R$ 118,80</span>
+              <span class="compare__detail">Premium</span>
+            </div>
+            <div class="compare__item">
+              <span class="compare__label">No anual</span>
+              <span class="compare__value" data-compare-annual>R$ 72,00</span>
+              <span class="compare__detail" data-compare-annual-per-month>R$ 6,00 por mês</span>
+            </div>
+            <div class="compare__item">
+              <span class="compare__label">Você economiza</span>
+              <span class="compare__value compare__value--accent" data-compare-saved>R$ 46,80</span>
+              <span class="compare__detail">quase 5 meses grátis</span>
+            </div>
+          </div>
+
+          <p class="plans__note">
+            Assinatura pela App Store ou Google Play, renovada automaticamente no mesmo período. No mensal,
+            dá para pausar nas férias por até 60 dias. Cancele quando quiser. Ao cancelar, você volta ao
+            Grátis sem perder nada.
+          </p>
+        </div>
+      </section>
+
+      <!-- 8. Perguntas frequentes -->
+      <section id="perguntas" class="section">
+        <div class="container faq__inner">
+          <h2 class="h2 h2--sm">Perguntas frequentes</h2>
+          <div class="faq__list">
+            <details class="faq__item" name="faq" open>
+              <summary>Preciso de internet?<svg class="faq__icon" width="20" height="20"><use href="#plus" /></svg></summary>
+              <p>Não. Tudo funciona offline. Só o login, o backup e a importação de documentos (Premium) usam internet.</p>
+            </details>
+            <details class="faq__item" name="faq">
+              <summary>O que dá para fazer no Grátis?<svg class="faq__icon" width="20" height="20"><use href="#plus" /></svg></summary>
+              <p>Cadastrar suas matérias e ver os horários de aula de cada dia. Presença, faltas, agenda, notas e importação com IA ficam no Premium.</p>
+            </details>
+            <details class="faq__item" name="faq">
+              <summary>Como funciona o teste de 7 dias?<svg class="faq__icon" width="20" height="20"><use href="#plus" /></svg></summary>
+              <p>Você usa o Premium completo por 7 dias, inclusive a importação com IA; no 5º dia avisamos que está acabando. Se cancelar antes do 8º dia, não paga nada. O teste vale uma vez por conta.</p>
+            </details>
+            <details class="faq__item" name="faq">
+              <summary>Por que o semestral e o anual saem mais baratos?<svg class="faq__icon" width="20" height="20"><use href="#plus" /></svg></summary>
+              <p>No semestral, o mês sai por R$ 6,90 (30% a menos). No anual, por R$ 6,00 (39% a menos), o que deixa as férias praticamente de graça.</p>
+            </details>
+            <details class="faq__item" name="faq">
+              <summary>E nas férias?<svg class="faq__icon" width="20" height="20"><use href="#plus" /></svg></summary>
+              <p>No plano mensal, você pode pausar por até 60 dias sem perder nada. No semestral e no anual, as férias já estão incluídas no desconto.</p>
+            </details>
+            <details class="faq__item" name="faq">
+              <summary>Indicando colegas eu ganho algo?<svg class="faq__icon" width="20" height="20"><use href="#plus" /></svg></summary>
+              <p>Sim. Cada colega que assinar com o seu link vale 1 mês grátis para você, até 3 meses.</p>
+            </details>
+            <details class="faq__item" name="faq">
+              <summary>Se eu sair do Premium, perco o que importei?<svg class="faq__icon" width="20" height="20"><use href="#plus" /></svg></summary>
+              <p>Nada é apagado. O que veio da importação com IA fica guardado e disponível só no Premium; volta assim que você reativar. O que você cadastrou à mão continua guardado e volta junto.</p>
+            </details>
+            <details class="faq__item" name="faq">
+              <summary>Como o app sabe quantas faltas eu posso ter?<svg class="faq__icon" width="20" height="20"><use href="#plus" /></svg></summary>
+              <p>Pela carga horária de cada matéria, pelos seus horários e pela frequência mínima do curso (normalmente 75%). Se o plano de ensino disser outro número, você ajusta à mão.</p>
+            </details>
+            <details class="faq__item" name="faq">
+              <summary>O que a importação com IA faz?<svg class="faq__icon" width="20" height="20"><use href="#plus" /></svg></summary>
+              <p>No Premium, você manda o comprovante de matrícula, o plano de ensino ou o histórico escolar e o app preenche matérias, horários, salas, provas e notas. Você revisa tudo antes de salvar.</p>
+            </details>
+            <details class="faq__item" name="faq">
+              <summary>Meus documentos ficam guardados?<svg class="faq__icon" width="20" height="20"><use href="#plus" /></svg></summary>
+              <p>Não. O documento é usado só para extrair os dados e não fica armazenado depois. Seus dados acadêmicos ficam no seu celular.</p>
+            </details>
+            <details class="faq__item" name="faq">
+              <summary>Funciona para qualquer faculdade?<svg class="faq__icon" width="20" height="20"><use href="#plus" /></svg></summary>
+              <p>Sim. Você configura a média para aprovação e a frequência mínima, e escolhe se cada matéria usa média simples ou com pesos.</p>
+            </details>
+            <details class="faq__item" name="faq">
+              <summary>Como cancelo?<svg class="faq__icon" width="20" height="20"><use href="#plus" /></svg></summary>
+              <p>Nas assinaturas da App Store ou do Google Play, quando quiser. Você volta ao Grátis sem perder nenhum dado.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. CTA final -->
+      <section class="cta">
+        <div class="cta__box">
+          <span class="cta__mark" style="color: #2e63f0"><svg width="44" height="44"><use href="#logo" /></svg></span>
+          <h2 class="h2">O semestre fica mais leve quando alguém já sabe o caminho.</h2>
+          <a class="btn btn--white btn--lg" href="#lista">Avise-me no lançamento</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- 10. Rodapé -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span class="brand brand--small">
+          <span class="brand__mark" style="color: #fff"><svg width="17" height="17"><use href="#logo" /></svg></span>
+          <span class="brand__name">veterano</span>
+        </span>
+        <span class="footer__copy">© 2026 Veterano. Feito no Brasil para quem está na faculdade.</span>
+      </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
